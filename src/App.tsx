@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import './App.css';
 import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
+import HomePage from "./Views/Homepage/Homepage";
 
 interface IProps {
 }
@@ -22,7 +23,7 @@ class App extends React.Component<IProps, IState> {
                 <ErrorBoundary>
                     <Switch>
                         <Route path={"/"}>
-                            Hello
+                            <HomePage/>
                         </Route>
                     </Switch>
                 </ErrorBoundary>
